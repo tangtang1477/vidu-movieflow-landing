@@ -304,7 +304,7 @@ function PainSolution() {
     <section className="border-b border-border">
       <div className="mx-auto max-w-[1400px] px-8 py-24">
         <SectionLabel>The 4 Bottlenecks · Solved</SectionLabel>
-        <h2 className="mt-6 max-w-3xl text-[44px] font-bold tracking-tight md:text-[56px]">
+        <h2 className="mt-6 text-[44px] font-bold tracking-tight md:text-[56px] whitespace-nowrap">
           Every Q3 feature maps to a production outcome.
         </h2>
 
