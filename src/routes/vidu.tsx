@@ -50,7 +50,7 @@ const PLAYGROUND_URL = "https://wavespeed.ai/models/vidu/q3/text-to-video";
 
 function ViduLanding() {
   return (
-    <div className="min-h-screen bg-background text-foreground antialiased">
+    <div className="vidu-dark min-h-screen bg-background text-foreground antialiased">
       <Nav />
       <Hero />
       <LogoStrip />
