@@ -137,6 +137,15 @@
     border-color: var(--color-border);
   }
 
+  html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  html::-webkit-scrollbar {
+    display: none;
+  }
+
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
