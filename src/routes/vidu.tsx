@@ -163,11 +163,11 @@ function Hero() {
                 Open Toolkit <ArrowRight className="ml-1 h-4 w-4" />
               </Button>
             </a>
-            <a href={DOCS_URL} target="_blank" rel="sponsored noreferrer">
+            <Link to="/">
               <Button size="lg" variant="outline" className="h-12 rounded-md border-border bg-secondary px-6 text-foreground hover:bg-secondary/70">
-                View API Docs
+                Try Vidu Q3
               </Button>
-            </a>
+            </Link>
           </div>
         </div>
 
