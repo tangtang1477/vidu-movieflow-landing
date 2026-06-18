@@ -86,13 +86,13 @@ function Nav() {
           <a href="#capabilities" className="transition-colors hover:text-foreground">Capabilities</a>
           <a href="#tiers" className="transition-colors hover:text-foreground">Pricing</a>
           <a href="#integration" className="transition-colors hover:text-foreground">API</a>
-          <a href={DOCS_URL} target="_blank" rel="noreferrer" className="transition-colors hover:text-foreground">Docs</a>
+          <a href={DOCS_URL} target="_blank" rel="sponsored noreferrer" className="transition-colors hover:text-foreground">Docs</a>
         </nav>
         <div className="flex items-center gap-2">
-          <a href={PLAYGROUND_URL} target="_blank" rel="noreferrer" className="hidden sm:block">
+          <a href={PLAYGROUND_URL} target="_blank" rel="sponsored noreferrer" className="hidden sm:block">
             <Button variant="ghost" size="sm" className="text-foreground hover:bg-secondary">Playground</Button>
           </a>
-          <a href={PLATFORM_URL} target="_blank" rel="noreferrer">
+          <a href={PLATFORM_URL} target="_blank" rel="sponsored noreferrer">
             <Button size="sm" className="rounded-full bg-foreground px-4 text-background hover:bg-foreground/90">
               Sign In
             </Button>
@@ -158,12 +158,12 @@ function Hero() {
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-3">
-            <a href={PLAYGROUND_URL} target="_blank" rel="noreferrer">
+            <a href={PLAYGROUND_URL} target="_blank" rel="sponsored noreferrer">
               <Button size="lg" className="h-12 rounded-md bg-foreground px-6 text-background hover:bg-foreground/90">
                 Open Playground <ArrowRight className="ml-1 h-4 w-4" />
               </Button>
             </a>
-            <a href={DOCS_URL} target="_blank" rel="noreferrer">
+            <a href={DOCS_URL} target="_blank" rel="sponsored noreferrer">
               <Button size="lg" variant="outline" className="h-12 rounded-md border-border bg-secondary px-6 text-foreground hover:bg-secondary/70">
                 View API Docs
               </Button>
@@ -370,7 +370,7 @@ function Capabilities() {
                 key={c.t}
                 href={PLAYGROUND_URL}
                 target="_blank"
-                rel="noreferrer"
+                rel="sponsored noreferrer"
                 className="group relative flex flex-col bg-background p-8 transition hover:bg-card"
               >
                 <div className="flex items-center justify-between">
@@ -462,7 +462,7 @@ function Tiers() {
                   </li>
                 ))}
               </ul>
-              <a href={PLATFORM_URL} target="_blank" rel="noreferrer" className="mt-10 block">
+              <a href={PLATFORM_URL} target="_blank" rel="sponsored noreferrer" className="mt-10 block">
                 <Button
                   className={`h-11 w-full rounded-md ${
                     t.featured
@@ -606,12 +606,12 @@ function FinalCTA() {
               Full access to every enterprise-grade feature.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-3">
-              <a href={PLATFORM_URL} target="_blank" rel="noreferrer">
+              <a href={PLATFORM_URL} target="_blank" rel="sponsored noreferrer">
                 <Button size="lg" className="h-12 rounded-md bg-primary px-6 text-background hover:bg-primary/90">
                   Register & claim credits <ArrowRight className="ml-1 h-4 w-4" />
                 </Button>
               </a>
-              <a href={DOCS_URL} target="_blank" rel="noreferrer">
+              <a href={DOCS_URL} target="_blank" rel="sponsored noreferrer">
                 <Button size="lg" variant="outline" className="h-12 rounded-md border-border bg-background px-6 text-foreground hover:bg-secondary">
                   Read the docs
                 </Button>
@@ -634,9 +634,9 @@ function SiteFooter() {
           <p className="font-mono text-xs text-muted-foreground">© {new Date().getFullYear()} MovieFlow × Vidu. All rights reserved.</p>
         </div>
         <div className="flex flex-wrap gap-8 text-sm text-muted-foreground">
-          <a href={DOCS_URL} target="_blank" rel="noreferrer" className="hover:text-foreground">Docs</a>
-          <a href={PLAYGROUND_URL} target="_blank" rel="noreferrer" className="hover:text-foreground">Playground</a>
-          <a href={PLATFORM_URL} target="_blank" rel="noreferrer" className="hover:text-foreground">Get credits</a>
+          <a href={DOCS_URL} target="_blank" rel="sponsored noreferrer" className="hover:text-foreground">Docs</a>
+          <a href={PLAYGROUND_URL} target="_blank" rel="sponsored noreferrer" className="hover:text-foreground">Playground</a>
+          <a href={PLATFORM_URL} target="_blank" rel="sponsored noreferrer" className="hover:text-foreground">Get credits</a>
           <a href="mailto:partners@movieflow.ai" className="hover:text-foreground">partners@movieflow.ai</a>
         </div>
       </div>
