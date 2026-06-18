@@ -17,6 +17,7 @@ import {
   Zap,
 } from "lucide-react";
 import heroBg from "@/assets/vidu-og.jpg";
+import viduHeroVideo from "@/assets/vidu-hero.mp4.asset.json";
 
 export const Route = createFileRoute("/vidu")({
   head: () => ({
