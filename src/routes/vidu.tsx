@@ -160,7 +160,7 @@ function Hero() {
           <div className="mt-10 flex flex-wrap items-center gap-3">
             <a href={PLAYGROUND_URL} target="_blank" rel="sponsored noreferrer">
               <Button size="lg" className="h-12 rounded-md bg-foreground px-6 text-background hover:bg-foreground/90">
-                Open Toolkit\u00a0 <ArrowRight className="ml-1 h-4 w-4" />
+                Open Toolkit <ArrowRight className="ml-1 h-4 w-4" />
               </Button>
             </a>
             <a href={DOCS_URL} target="_blank" rel="sponsored noreferrer">
