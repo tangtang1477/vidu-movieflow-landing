@@ -171,23 +171,17 @@ function Hero() {
           </div>
         </div>
 
-        {/* video poster */}
+        {/* video */}
         <div className="relative">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border bg-card">
-            <img src={heroBg} alt="Vidu Q3 generated cinematic preview" className="absolute inset-0 h-full w-full object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
-            <button
-              type="button"
-              className="absolute inset-0 m-auto flex h-16 w-16 items-center justify-center rounded-full bg-foreground/95 text-background transition hover:scale-105"
-              aria-label="Play demo"
-            >
-              <Play className="h-6 w-6 translate-x-0.5" />
-            </button>
-            <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-1.5">
-              {[0, 1, 2, 3, 4].map((i) => (
-                <span key={i} className={`h-1 w-6 rounded-full ${i === 0 ? "bg-foreground" : "bg-foreground/30"}`} />
-              ))}
-            </div>
+          <div className="relative aspect-video overflow-hidden rounded-2xl border border-border bg-card">
+            <video
+              src={viduHeroVideo.url}
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="absolute inset-0 h-full w-full object-cover"
+            />
           </div>
         </div>
       </div>
