@@ -407,7 +407,7 @@ function Tiers() {
       unit: "/ run",
       tag: "Most popular",
       features: ["1–16s outputs", "Reference-to-Video (1–4 imgs)", "Start-End keyframes", "720p / 1080p / 2K / 4K"],
-      cta: "Talk to MovieFlow",
+      cta: "Try Pro",
       featured: true,
     },
     {
