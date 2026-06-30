@@ -115,14 +115,11 @@ function BrandLockup() {
   return (
     <div className="flex items-center gap-3 text-base">
       <div className="flex items-center gap-2 font-semibold tracking-tight">
-        <span className="inline-flex h-6 w-6 items-center justify-center rounded bg-primary text-background">
-          <Film className="h-3.5 w-3.5" />
-        </span>
-        MovieFlow
+        <img src={movieflowLogo.url} alt="MovieFlow" className="h-6 w-auto" />
       </div>
       <span className="text-muted-foreground/60">×</span>
       <div className="flex items-center gap-2 font-semibold tracking-tight">
-        <Sparkles className="h-4 w-4 text-primary" />
+        <img src={viduIcon.url} alt="Vidu" className="h-6 w-6 rounded" />
         Vidu
       </div>
     </div>
