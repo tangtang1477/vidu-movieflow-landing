@@ -487,6 +487,168 @@ function Tiers() {
   );
 }
 
+/* ---------- Creator Challenge ---------- */
+function CreatorChallenge() {
+  const steps = [
+    {
+      icon: MessageCircle,
+      title: "Join",
+      desc: "Join the #vidu-shortsrush-showcase channel and DM to register",
+    },
+    {
+      icon: Wand2,
+      title: "Create",
+      desc: "Create a cinematic AI short using Vidu workflow on MovieFlow",
+    },
+    {
+      icon: Smartphone,
+      title: "Post",
+      desc: "Post it on TikTok, YouTube Shorts, Instagram Reels, or X. Tag @MovieFlow and @ViduAI. Use hashtags: #MovieFlowAI #ViduAI #AIShorts #AIMonetization",
+    },
+    {
+      icon: Send,
+      title: "Submit",
+      desc: "Submit your link in the showcase channel or via the event form",
+    },
+  ];
+
+  const prizes = [
+    { title: "Grand Prize", value: "$500", count: "× 1" },
+    { title: "Runner-Up", value: "$300", count: "× 2" },
+    { title: "Best Hook", value: "$200", count: "× 3" },
+    { title: "Best Vidu Execution", value: "$150", count: "× 5" },
+    { title: "Community Resonance Award", value: "$100", count: "× 10" },
+    { title: "Participation Credits", value: "2000 credits", count: "× 20" },
+  ];
+
+  const faqs = [
+    {
+      q: "Does this challenge guarantee that I can make money?",
+      a: "No. This challenge does not guarantee income, views, followers, or monetization. It helps creators test AI short-form content workflows faster.",
+    },
+    {
+      q: "Can I use real celebrities or popular film / TV characters?",
+      a: "No. Do not use real celebrities, public figures, copyrighted characters, or unauthorized IP.",
+    },
+    {
+      q: "Do I have to use Vidu?",
+      a: "Yes. This is a MovieFlow × Vidu challenge. Valid entries must be created using Vidu on MovieFlow.",
+    },
+    {
+      q: "Does the work have to be new?",
+      a: "Yes. Only new works created during the event period are eligible.",
+    },
+    {
+      q: "Can I submit multiple works?",
+      a: "Yes. Each creator can submit up to 5 works, but can only win one major prize.",
+    },
+    {
+      q: "Can MovieFlow use my work?",
+      a: "By submitting, you agree that MovieFlow and Vidu may showcase your work in official social posts, campaign pages, community posts, recap videos, and promotional materials, with creator credit.",
+    },
+  ];
+
+  return (
+    <section className="border-b border-border">
+      <div className="mx-auto max-w-[1400px] px-8 py-24">
+        <SectionLabel>Creator Challenge</SectionLabel>
+        <h2 className="mt-6 text-[44px] font-bold tracking-tight md:text-[56px]">
+          Shorts to Spotlight
+        </h2>
+        <p className="mt-4 max-w-2xl text-muted-foreground">
+          One-Dollar Movie Sprint — official creator challenge by MovieFlow × Vidu.
+        </p>
+
+        {/* Challenge Intro */}
+        <div className="mt-14 rounded-2xl border border-border bg-card p-8 md:p-12">
+          <div className="space-y-6 text-[15px] leading-relaxed text-muted-foreground">
+            <p>
+              This isn&apos;t just another AI art contest. We want to see cinematic AI shorts that creators can actually post, test, and build sustainable content workflows around.
+            </p>
+            <p>
+              Use Vidu on MovieFlow to create a cinematic AI short (any duration). Post it. Submit it. Build your AI content workflow.
+            </p>
+          </div>
+        </div>
+
+        {/* How to Join */}
+        <div className="mt-24">
+          <h3 className="text-2xl font-semibold tracking-tight">How to Join</h3>
+          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {steps.map((step) => {
+              const Icon = step.icon;
+              return (
+                <div key={step.title} className="rounded-2xl border border-border bg-card p-6">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-border text-primary">
+                    <Icon className="h-5 w-5" />
+                  </div>
+                  <h4 className="mt-4 text-lg font-semibold tracking-tight">{step.title}</h4>
+                  <p className="mt-2 text-sm text-muted-foreground">{step.desc}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Reward Pool */}
+        <div className="mt-24">
+          <SectionLabel>Reward Pool</SectionLabel>
+          <h3 className="mt-6 text-[44px] font-bold tracking-tight md:text-[56px]">
+            $5,000 Creator Reward Pool
+          </h3>
+          <p className="mt-4 max-w-2xl text-muted-foreground">
+            Create an AI video that is not only beautiful, but postable, repeatable, and built for short-form content workflows.
+          </p>
+          <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {prizes.map((prize) => (
+              <div key={prize.title} className="rounded-2xl border border-border bg-card p-6">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-border text-primary">
+                  <Trophy className="h-5 w-5" />
+                </div>
+                <h4 className="mt-4 text-lg font-semibold tracking-tight">{prize.title}</h4>
+                <div className="mt-2 flex items-baseline gap-2">
+                  <span className="text-3xl font-bold tracking-tight text-primary">{prize.value}</span>
+                  <span className="text-sm text-muted-foreground">{prize.count}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Judging */}
+        <div className="mt-24 rounded-2xl border border-border bg-card p-8 md:p-12">
+          <h3 className="text-2xl font-semibold tracking-tight">Judging</h3>
+          <p className="mt-4 max-w-3xl text-[15px] leading-relaxed text-muted-foreground">
+            We are judging based on monetization potential, hook strength, repeatable workflow, Vidu execution, workflow clarity, and community engagement.
+          </p>
+          <p className="mt-4 text-lg font-semibold tracking-tight text-primary">
+            Create. Post. Test. Repeat.
+          </p>
+        </div>
+
+        {/* FAQ */}
+        <div className="mt-24">
+          <SectionLabel>FAQ</SectionLabel>
+          <h3 className="mt-6 text-[44px] font-bold tracking-tight md:text-[56px]">
+            Rules &amp; Questions
+          </h3>
+          <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {faqs.map((faq) => (
+              <div key={faq.q} className="rounded-2xl border border-border bg-card p-6">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-border text-primary">
+                  <HelpCircle className="h-5 w-5" />
+                </div>
+                <h4 className="mt-4 text-sm font-semibold tracking-tight">{faq.q}</h4>
+                <p className="mt-2 text-sm text-muted-foreground">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 /* ---------- Results ---------- */
 function Results() {
   const stats = [
