@@ -583,7 +583,7 @@ function CreatorChallenge() {
 
         {/* Challenge Intro */}
         <div className="mt-14 rounded-2xl border border-border bg-card p-8 md:p-12">
-          <div className="space-y-6 text-[15px] leading-relaxed text-muted-foreground">
+          <div className="space-y-6 text-[15px] leading-relaxed text-foreground">
             <p>
               This isn&apos;t just another AI art contest. We want to see cinematic AI shorts that creators can actually post, test, and build sustainable content workflows around.
             </p>
