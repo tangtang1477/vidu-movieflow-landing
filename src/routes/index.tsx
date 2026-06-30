@@ -59,11 +59,12 @@ const PLAYGROUND_URL = "https://wavespeed.ai/models/vidu/q3/text-to-video";
 
 const SECTION_CHIPS = [
   { id: "overview", label: "OVERVIEW" },
-  { id: "capabilities", label: "ENDPOINTS" },
   { id: "examples", label: "EXAMPLES" },
+  { id: "capabilities", label: "ENDPOINTS" },
   { id: "tiers", label: "PRICING" },
-  { id: "integration", label: "API" },
+  { id: "creator-challenge", label: "CREATOR CHALLENGE" },
   { id: "results", label: "RESULTS" },
+  { id: "integration", label: "API" },
   { id: "faq", label: "PARTNERSHIP" },
 ];
 
@@ -571,7 +572,7 @@ function CreatorChallenge() {
   ];
 
   return (
-    <section className="border-b border-border">
+    <section id="creator-challenge" className="border-b border-border">
       <div className="mx-auto max-w-[1400px] px-8 py-24">
         <SectionLabel>Creator Challenge</SectionLabel>
         <h2 className="mt-6 text-[44px] font-bold tracking-tight md:text-[56px]">
