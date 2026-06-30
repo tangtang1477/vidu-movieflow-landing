@@ -572,7 +572,7 @@ function CreatorChallenge() {
   ];
 
   return (
-    <section className="border-b border-border">
+    <section id="creator-challenge" className="border-b border-border">
       <div className="mx-auto max-w-[1400px] px-8 py-24">
         <SectionLabel>Creator Challenge</SectionLabel>
         <h2 className="mt-6 text-[44px] font-bold tracking-tight md:text-[56px]">
