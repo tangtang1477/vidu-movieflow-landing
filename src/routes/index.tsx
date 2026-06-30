@@ -71,8 +71,8 @@ function ViduLanding() {
   return (
     <div className="vidu-dark min-h-screen bg-background text-foreground antialiased">
       <Nav />
-      <Hero />
       <SectionChips />
+      <Hero />
       <About />
       <PainSolution />
       <Capabilities />
