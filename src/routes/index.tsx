@@ -115,7 +115,7 @@ function BrandLockup() {
   return (
     <div className="flex items-center gap-3 text-base">
       <div className="flex items-center gap-2 font-semibold tracking-tight">
-        <img src={movieflowLogo.url} alt="MovieFlow" className="h-6 w-auto" />
+        <img src={movieflowLogo.url} alt="MovieFlow" className="h-8 w-auto" />
       </div>
       <span className="text-muted-foreground/60">×</span>
       <div className="flex items-center gap-2 font-semibold tracking-tight">
