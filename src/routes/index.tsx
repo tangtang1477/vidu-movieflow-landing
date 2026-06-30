@@ -473,10 +473,10 @@ function Tiers() {
           {tiers.map((t) => (
             <div
               key={t.name}
-              className={`relative overflow-hidden rounded-2xl border p-8 ${
+              className={`relative overflow-hidden rounded-2xl border p-8 transition ${
                 t.featured
-                  ? "border-primary/40 bg-card shadow-[var(--shadow-glow)]"
-                  : "border-border bg-card"
+                  ? "border-primary/40 bg-card shadow-[var(--shadow-glow)] z-10"
+                  : "border-border/30 bg-background opacity-70 hover:opacity-100 hover:border-border/60 hover:bg-card"
               }`}
             >
               {t.featured && (
