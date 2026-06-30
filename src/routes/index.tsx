@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import {
@@ -70,8 +71,8 @@ function ViduLanding() {
   return (
     <div className="vidu-dark min-h-screen bg-background text-foreground antialiased">
       <Nav />
-      <Hero />
       <SectionChips />
+      <Hero />
       <About />
       <PainSolution />
       <Capabilities />
@@ -196,19 +197,49 @@ function Hero() {
 
 /* ---------- Section chips ---------- */
 function SectionChips() {
+  const [active, setActive] = useState("overview");
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+        if (visible.length > 0) {
+          setActive(visible[0].target.id);
+        }
+      },
+      { rootMargin: "-20% 0px -60% 0px", threshold: 0 }
+    );
+
+    SECTION_CHIPS.forEach((c) => {
+      const el = document.getElementById(c.id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section className="border-b border-border bg-background">
+    <section className="sticky top-16 z-40 border-b border-border bg-background/80 backdrop-blur-xl">
       <div className="mx-auto max-w-[1400px] overflow-x-auto px-8 py-5">
         <div className="flex items-center gap-2">
-          {SECTION_CHIPS.map((c) => (
-            <a
-              key={c.id}
-              href={`#${c.id}`}
-              className="rounded-full border border-border bg-background px-4 py-1.5 font-mono text-xs uppercase tracking-wider text-muted-foreground transition-colors hover:border-primary/40 hover:text-foreground"
-            >
-              {c.label}
-            </a>
-          ))}
+          {SECTION_CHIPS.map((c) => {
+            const isActive = active === c.id;
+            return (
+              <a
+                key={c.id}
+                href={`#${c.id}`}
+                className={`relative rounded-full border px-4 py-1.5 font-mono text-xs uppercase tracking-wider transition-colors ${
+                  isActive
+                    ? "border-primary/60 bg-primary/10 text-primary"
+                    : "border-border bg-background text-muted-foreground hover:border-primary/40 hover:text-foreground"
+                }`}
+              >
+                {c.label}
+              </a>
+            );
+          })}
         </div>
       </div>
     </section>
@@ -301,7 +332,7 @@ function PainSolution() {
   ];
 
   return (
-    <section className="border-b border-border">
+    <section id="examples" className="border-b border-border">
       <div className="mx-auto max-w-[1400px] px-8 py-24">
         <SectionLabel>The 4 Bottlenecks · Solved</SectionLabel>
         <h2 className="mt-6 text-[44px] font-bold tracking-tight md:text-[56px] whitespace-nowrap">
