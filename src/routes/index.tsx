@@ -24,6 +24,8 @@ import {
 } from "lucide-react";
 import heroBg from "@/assets/vidu-og.jpg";
 import viduHeroVideo from "@/assets/vidu-hero.mp4.asset.json";
+import movieflowLogo from "@/assets/movieflow-logo.png.asset.json";
+import viduIcon from "@/assets/vidu-icon.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
