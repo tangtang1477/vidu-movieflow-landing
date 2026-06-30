@@ -484,7 +484,7 @@ function Tiers() {
                   Featured
                 </div>
               )}
-              <div className="font-mono text-xs uppercase tracking-wider text-muted-foreground">{t.tag}</div>
+              <div className={`font-mono text-xs uppercase tracking-wider ${t.featured ? "text-muted-foreground" : "text-muted-foreground/40"}`}>{t.tag}</div>
               <h3 className="mt-2 text-3xl font-bold tracking-tight">{t.name}</h3>
               <div className="mt-6 flex items-baseline gap-1">
                 <span className="text-5xl font-bold tracking-tight">{t.price}</span>
@@ -493,8 +493,8 @@ function Tiers() {
               <ul className="mt-8 space-y-3 text-sm">
                 {t.features.map((f) => (
                   <li key={f} className="flex items-start gap-2">
-                    <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-                    <span className="text-muted-foreground">{f}</span>
+                    <Check className={`mt-0.5 h-4 w-4 shrink-0 ${t.featured ? "text-primary" : "text-primary/30"}`} />
+                    <span className={t.featured ? "text-muted-foreground" : "text-muted-foreground/50"}>{f}</span>
                   </li>
                 ))}
               </ul>
@@ -503,7 +503,7 @@ function Tiers() {
                   className={`h-11 w-full rounded-md ${
                     t.featured
                       ? "bg-primary text-background hover:bg-primary/90"
-                      : "border border-border bg-background text-foreground hover:bg-secondary"
+                      : "border border-border/60 bg-transparent text-muted-foreground hover:bg-secondary/50"
                   }`}
                 >
                   {t.cta} <ArrowRight className="ml-1 h-4 w-4" />
