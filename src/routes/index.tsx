@@ -473,30 +473,30 @@ function Tiers() {
           {tiers.map((t) => (
             <div
               key={t.name}
-              className="group relative overflow-hidden rounded-2xl border border-border/30 bg-background p-8 transition hover:z-10 hover:border-primary/40 hover:bg-card hover:shadow-[var(--shadow-glow)]"
+              className="group relative overflow-hidden rounded-2xl border border-border bg-card p-8 transition hover:z-10 hover:border-primary/40 hover:shadow-[var(--shadow-glow)]"
             >
               {t.featured && (
-                <div className="absolute right-6 top-6 rounded-full border border-primary/20 bg-primary/5 px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-wider text-primary/40 transition group-hover:border-primary/40 group-hover:bg-primary/10 group-hover:text-primary">
+                <div className="absolute right-6 top-6 rounded-full border border-primary/20 bg-primary/5 px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-wider text-primary transition group-hover:border-primary/40 group-hover:bg-primary/10">
                   Featured
                 </div>
               )}
-              <div className="font-mono text-xs uppercase tracking-wider text-muted-foreground/30 transition group-hover:text-muted-foreground">{t.tag}</div>
-              <h3 className="mt-2 text-3xl font-bold tracking-tight text-foreground/40 transition group-hover:text-foreground">{t.name}</h3>
+              <div className="font-mono text-xs uppercase tracking-wider text-muted-foreground transition">{t.tag}</div>
+              <h3 className="mt-2 text-3xl font-bold tracking-tight text-foreground transition">{t.name}</h3>
               <div className="mt-6 flex items-baseline gap-1">
-                <span className="text-5xl font-bold tracking-tight text-foreground/40 transition group-hover:text-foreground">{t.price}</span>
-                <span className="text-sm text-muted-foreground/40 transition group-hover:text-muted-foreground">{t.unit}</span>
+                <span className="text-5xl font-bold tracking-tight text-foreground transition">{t.price}</span>
+                <span className="text-sm text-muted-foreground transition">{t.unit}</span>
               </div>
               <ul className="mt-8 space-y-3 text-sm">
                 {t.features.map((f) => (
                   <li key={f} className="flex items-start gap-2">
-                    <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary/20 transition group-hover:text-primary" />
-                    <span className="text-muted-foreground/40 transition group-hover:text-muted-foreground">{f}</span>
+                    <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary transition" />
+                    <span className="text-muted-foreground transition">{f}</span>
                   </li>
                 ))}
               </ul>
               <a href={PLATFORM_URL} target="_blank" rel="sponsored noreferrer" className="mt-10 block">
                 <Button
-                  className="h-11 w-full rounded-md border border-border/30 bg-transparent text-muted-foreground/40 transition group-hover:border-primary group-hover:bg-primary group-hover:text-background"
+                  className="h-11 w-full rounded-md border border-border bg-background text-foreground transition group-hover:border-primary group-hover:bg-primary group-hover:text-background"
                 >
                   {t.cta} <ArrowRight className="ml-1 h-4 w-4" />
                 </Button>
