@@ -66,6 +66,7 @@ function ViduLanding() {
       <About />
       <PainSolution />
       <Capabilities />
+      <CreatorChallenge />
       <Tiers />
       <Results />
       <Integration />
