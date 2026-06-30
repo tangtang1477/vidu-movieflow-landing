@@ -100,7 +100,7 @@ function Nav() {
         </nav>
         <div className="flex items-center gap-2">
           <a href={PLAYGROUND_URL} target="_blank" rel="sponsored noreferrer" className="hidden sm:block">
-            <Button variant="ghost" size="sm" className="text-foreground hover:bg-secondary">Toolkit</Button>
+            <Button variant="ghost" size="sm" className="text-foreground hover:bg-secondary hover:text-foreground">Toolkit</Button>
           </a>
           <a href={PLATFORM_URL} target="_blank" rel="sponsored noreferrer">
             <Button size="sm" className="rounded-full bg-foreground px-4 text-background hover:bg-foreground/90">
@@ -171,7 +171,7 @@ function Hero() {
               </Button>
             </a>
             <Link to="/">
-              <Button size="lg" variant="outline" className="h-12 rounded-md border-border bg-secondary px-6 text-foreground hover:bg-secondary/70">
+              <Button size="lg" variant="outline" className="h-12 rounded-md border-border bg-secondary px-6 text-foreground hover:bg-secondary/70 hover:text-foreground">
                 Try Vidu Q3
               </Button>
             </Link>
@@ -803,7 +803,7 @@ function FinalCTA() {
                 </Button>
               </a>
               <a href={DOCS_URL} target="_blank" rel="sponsored noreferrer">
-                <Button size="lg" variant="outline" className="h-12 rounded-md border-border bg-background px-6 text-foreground hover:bg-secondary">
+                <Button size="lg" variant="outline" className="h-12 rounded-md border-border bg-background px-6 text-foreground hover:bg-secondary hover:text-foreground">
                   Read the docs
                 </Button>
               </a>
