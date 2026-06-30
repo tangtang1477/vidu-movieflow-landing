@@ -332,7 +332,7 @@ function PainSolution() {
   ];
 
   return (
-    <section className="border-b border-border">
+    <section id="examples" className="border-b border-border">
       <div className="mx-auto max-w-[1400px] px-8 py-24">
         <SectionLabel>The 4 Bottlenecks · Solved</SectionLabel>
         <h2 className="mt-6 text-[44px] font-bold tracking-tight md:text-[56px] whitespace-nowrap">
