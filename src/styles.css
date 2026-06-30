@@ -140,6 +140,7 @@
   html {
     scrollbar-width: none;
     -ms-overflow-style: none;
+    scroll-padding-top: 8.5rem;
   }
 
   html::-webkit-scrollbar {
