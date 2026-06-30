@@ -59,11 +59,12 @@ const PLAYGROUND_URL = "https://wavespeed.ai/models/vidu/q3/text-to-video";
 
 const SECTION_CHIPS = [
   { id: "overview", label: "OVERVIEW" },
-  { id: "capabilities", label: "ENDPOINTS" },
   { id: "examples", label: "EXAMPLES" },
+  { id: "capabilities", label: "ENDPOINTS" },
   { id: "tiers", label: "PRICING" },
-  { id: "integration", label: "API" },
+  { id: "creator-challenge", label: "CREATOR CHALLENGE" },
   { id: "results", label: "RESULTS" },
+  { id: "integration", label: "API" },
   { id: "faq", label: "PARTNERSHIP" },
 ];
 
